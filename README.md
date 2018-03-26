@@ -1,2 +1,2 @@
-# ui
-The web ui of DocStackTop 
+# DocStack-web
+The web of DocStackTop 
