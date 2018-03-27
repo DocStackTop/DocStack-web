@@ -1,0 +1,56 @@
+:host ::ng-deep .logo {
+    width: 120px;
+    height: 31px;
+    background: #333;
+    border-radius: 6px;
+    margin: 16px 24px 16px 0;
+    float: left;
+    display: flex;
+    color: #fff;
+    line-height:initial;
+    justify-content:center;
+    align-items:center;
+    .logoImg{
+        height: 80%;
+        margin-right: 10px;
+        
+    }
+  }
+  ul{
+    float: left;
+  }
+  .user,.ant-dropdown-trigger{
+      text-align: right;
+      display: flex;
+      align-items:center;
+      justify-content:flex-end;
+      height: 100%;
+      color:#fff;
+      cursor: pointer;
+      .userHead{
+    margin-right: 10px;
+     height: 31px;
+     width: 31px;
+     border-radius: 50%; 
+    }
+    .userName{
+        margin-right: 10px;
+    }
+  }
+  .userMenu{
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+  }
+  .layout{
+      height: 100%;
+      position: relative;
+  }
+  .content{
+      margin-top: 30px;
+      height: calc(100% - 140px);
+      background-color: #fff;
+      position: absolute;
+      margin-left: 30px;
+      width:  calc(100% - 60px);
+  }

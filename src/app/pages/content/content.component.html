@@ -1,4 +1,39 @@
 <!--The content below is only a placeholder and can be replaced.-->
-content
+<nz-layout class="layout">
+    <nz-header>
+      <div class="logo">
+          <img class="logoImg" src="http://p689v5tyb.bkt.clouddn.com/logo.png"/>
+          <span>DocStack</span>
+      </div>
+      <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
+        <li nz-menu-item *ngFor="let menu of menus" (click)="chooseMenu(menu)" [nzSelected]="choose==menu.type">{{menu.text}}</li>
+      </ul>
+      <div class="user">
+            <nz-dropdown [nzTrigger]="'click'">
+                <div nz-dropdown>
+                        <img class="userHead" src="http://p689v5tyb.bkt.clouddn.com/userHeader.jpg"/>
+                        <span class="userName">AlicePrincess</span>
+                        <i class="anticon anticon-down"></i>
+                </div>
+                <ul nz-menu class="userMenu">
+                        <li nz-menu-item>
+                          <a rel="noopener noreferrer">设置</a>
+                        </li>
+                        <li nz-menu-item>
+                          <a rel="noopener noreferrer">退出登录</a>
+                        </li>
+                        
+                      </ul>
+    </nz-dropdown>
+      </div>
+      
+    </nz-header>
+    <nz-content>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+    <nz-footer style="text-align: center;">DocStack ©2017 Implement By Alice</nz-footer>
+  </nz-layout>
 
 

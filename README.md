@@ -1,17 +1,17 @@
 ## DocStack-web
-![logo](https://docstack.oss-cn-beijing.aliyuncs.com/logo.png?Expires=1522054209&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=uJJkQmHEjMCclh5DXNObBec1JzY%3D)
+![logo](http://p689v5tyb.bkt.clouddn.com/logo.png)
 
 ### DocStack满足公司内部的文档管理需求，用于知识分享和笔记.
 
-![npm](https://docstack.oss-cn-beijing.aliyuncs.com/npm.svg?Expires=1522052962&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=XtRTSGIi616CauYxVI2qvk5qGWk%3D)
-![next](https://docstack.oss-cn-beijing.aliyuncs.com/next.svg?Expires=1522052951&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=auOMsCOpuxj%2FbiEsjtwokC0EW3A%3D)
-![license](https://docstack.oss-cn-beijing.aliyuncs.com/license.svg?Expires=1522052927&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=DeoVZvKIy8eG%2FVStkcYJBrI7jVE%3D)
+![npm](http://p689v5tyb.bkt.clouddn.com/npm.svg)
+![next](http://p689v5tyb.bkt.clouddn.com/next.svg)
+![license](http://p689v5tyb.bkt.clouddn.com/license.svg)
 
-[![GitHub forks](https://docstack.oss-cn-beijing.aliyuncs.com/fork.svg?Expires=1522052891&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=6xl3kkqyWBd7SLNG%2BUhQm3%2BwBd4%3D)](https://github.com/DocStackTop/DocStack-web/fork)
-[![GitHub stars](https://docstack.oss-cn-beijing.aliyuncs.com/star.svg?Expires=1522052974&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=cHCfpFiTCMA3dgpOdgqTKC3Wmao%3D)](https://github.com/DocStackTop/DocStack-web)
+[![GitHub forks](http://p689v5tyb.bkt.clouddn.com/fork.svg)](https://github.com/DocStackTop/DocStack-web/fork)
+[![GitHub stars](http://p689v5tyb.bkt.clouddn.com/star.svg)](https://github.com/DocStackTop/DocStack-web)
 
 
-![Sauce Test Status](https://docstack.oss-cn-beijing.aliyuncs.com/support.svg?Expires=1522052991&OSSAccessKeyId=TMP.AQHtRWDGCsIlb7lzoEISaGVGTg8AKvfWKakMfBki5ZBnsVCavx3JOMvM804pMC4CFQDUJa2_HNh7MWb2Jtuc_OTYUH2V6wIVAKMs_rMnuQFDSiW-v00lVVW2VwYs&Signature=s1KkAhUd2E3TlIVLaRCgs0xthsQ%3D)
+![Sauce Test Status](http://p689v5tyb.bkt.clouddn.com/support.svg)
 
 ## 特性
 - 使用 TypeScript 构建，提高开发质量

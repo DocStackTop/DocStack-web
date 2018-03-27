@@ -1,0 +1,13 @@
+<div>
+    <div class="cover" (mouseover)="showLayer()" (mouseleave)="hideLayer()">
+        <img src="{{data.cover}}"/>
+        <div class="layer" *ngIf="layer">
+                <i class='anticon' [ngClass]="{'anticon-heart-o': !data.collection,'anticon-heart':data.collection}"></i>
+            <div class="textShow">
+               {{data.desc}}
+            </div>
+            
+        </div>
+    </div>
+    <div class="title">{{data.title}}</div>
+</div>

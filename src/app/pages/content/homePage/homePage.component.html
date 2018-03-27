@@ -1,0 +1,9 @@
+<div class="articleBox" id="articleBox">
+    <div class="articleList" *ngFor="let item of list" [ngStyle]="{'margin-left.px': marginLeft,'margin-right.px': marginLeft}">
+            <app-articleList [data]="item"></app-articleList>
+    </div>
+    
+</div>
+<div class="pagination">
+        <nz-pagination [(nzPageIndex)]="_current"  [nzTotal]="500" (nzPageIndexChange)="changePage($event)"></nz-pagination>
+</div>

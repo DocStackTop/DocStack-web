@@ -1,0 +1,44 @@
+.cover{
+    width: 175px;
+    height: 230px;
+    position: relative;
+    cursor: pointer;
+    -moz-box-shadow:2px 2px 5px #999; 
+    -webkit-box-shadow:2px 2px 5px #999; 
+    box-shadow:2px 2px 5px #999;
+    .layer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction: column;
+        font-size: 18px;
+        .anticon{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #FF6699;
+        }
+        .textShow{
+            display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
+.title{
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+font-size: 18px;
+text-align: center;
+margin-top: 10px;
+}
