@@ -1,0 +1,18 @@
+<div  *ngFor="let item of list">
+        <li class="text" class="title" (mousedown)="rightMenuPar($event,item.id)" [ngClass]="{'choose': choose==item.id}" (click)="chooseStatus($event,item.id)" *ngIf="!item.childrens" >
+                        <i class="anticon anticon-file-text"></i>{{item.name}}
+        </li>
+        <li  *ngIf="item.childrens" (mousedown)="rightMenuPar($event,item.id)" (click)="chooseStatus($event,item.id)">
+                <span class="group title" [ngClass]="{'choose': choose==item.id}" >
+                       <span class="text">
+                                <i class="anticon anticon-file-text"></i>
+                                {{item.name}}
+                        </span> 
+                        <i class="anticon arrow anticon-down" (click)="changeShowStatus($event,item.id)" [ngClass]="{'up': close==item.id}"></i>
+                </span>
+                <ul [@flyInOut]="'in'" *ngIf="item.id==close">
+                    <app-menu [choose]="choose" (rightMenuShow)="rightMenuShow.emit($event)" [list]="item.childrens" (chooseData)="chooseDatatoPar($event)"></app-menu>                  
+                </ul>
+              </li>
+</div>
+

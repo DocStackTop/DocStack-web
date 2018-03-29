@@ -7,6 +7,7 @@ import { HomePageComponent } from './pages/content/homePage/homePage.component';
 import { ArticleComponent } from './pages/content/article/article.component';
 import { CollectionComponent } from './pages/content/collection/collection.component';
 import { MessageComponent } from './pages/content/message/message.component';
+import { DetailsComponent } from './pages/content/details/details.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
       { path: 'collection', component: CollectionComponent },
       { path: 'message', component: MessageComponent }
     ]},
+    { path: 'details/:id', component: DetailsComponent },
   {
     path: '',
     redirectTo: '/login',

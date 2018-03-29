@@ -15,6 +15,11 @@ import { ArticleComponent } from './pages/content/article/article.component';
 import { CollectionComponent } from './pages/content/collection/collection.component';
 import { MessageComponent } from './pages/content/message/message.component';
 import { ArticleListComponent } from './component/articleList/articleList.component';
+import { DetailsComponent } from './pages/content/details/details.component';
+import { MenuComponent } from './component/menu/menu.component';
+import { MarkdownEditorComponent } from './component/md-editor/md-editor.component';
+import { MarkdownModule } from 'ngx-markdown';
+// import { LMarkdownEditorModule } from 'ngx-markdown-editor';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,11 @@ import { ArticleListComponent } from './component/articleList/articleList.compon
     ArticleComponent,
     CollectionComponent,
     MessageComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    DetailsComponent,
+    MenuComponent,
+    MarkdownEditorComponent,
+    // LMarkdownEditorModule
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,8 @@ import { ArticleListComponent } from './component/articleList/articleList.compon
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgZorroAntdModule.forRoot()
+    NgZorroAntdModule.forRoot(),
+    MarkdownModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })

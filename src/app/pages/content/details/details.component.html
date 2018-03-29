@@ -1,0 +1,30 @@
+
+<div class="menu" [ngStyle]="{'width.px': menuWidth}">
+  <div class="topBar">
+      <i class="anticon anticon-plus"></i>
+      <i class="anticon anticon-edit"></i>
+      <i class="anticon anticon-close"></i>
+  </div>
+        <ul class="full"  >
+               <app-menu [choose]="choose" [list]="list" (rightMenuShow)="rightMenuShow($event)" (chooseData)="chooseData($event)"></app-menu>
+        </ul>
+      <div class="resizeLine" [ngStyle]="{'left.px': resize}" (mousedown)="startResize($event)" >
+          <i class="anticon anticon-swap"></i>
+      </div>
+</div>
+<div class="content" [ngStyle]="{'width.px': pageWidth-menuWidth-20}" >
+    <md-editor name="Content" [preRender]="preRenderFunc" [(ngModel)]="content" [height]="pageHeight-90+'px'" [mode]="mode" [options]="options" required maxlength="500"></md-editor>
+</div>
+
+
+<div *ngIf="rightMenuStatus" class="rightMenu" [ngStyle]="{'left.px': rightMenu.x,'top.px':rightMenu.y}">
+    <ul>
+      <li>新增</li>
+      <li>编辑</li>
+      <li>删除</li>
+    </ul>
+</div>
+
+
+
+
