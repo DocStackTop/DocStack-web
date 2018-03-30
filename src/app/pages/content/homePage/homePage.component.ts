@@ -14,6 +14,7 @@ export class HomePageComponent {
   marginWidth=0;
   marginLeft=0;
   _current=1;
+  constructor(private router: Router) { }
   ngOnInit() {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -25,6 +26,9 @@ export class HomePageComponent {
   }
   changePage(data){
     console.log("当前页数"+data)
+  }
+  goDetail(){
+    this.router.navigate(["/details",1]);
   }
   ngAfterViewInit(){
     let that=this;

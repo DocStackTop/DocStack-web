@@ -1,5 +1,5 @@
 <div class="articleBox" id="articleBox">
-    <div class="articleList" *ngFor="let item of list" [ngStyle]="{'margin-left.px': marginLeft,'margin-right.px': marginLeft}">
+    <div class="articleList" *ngFor="let item of list" (click)="goDetail()" [ngStyle]="{'margin-left.px': marginLeft,'margin-right.px': marginLeft}">
             <app-articleList [data]="item"></app-articleList>
     </div>
     

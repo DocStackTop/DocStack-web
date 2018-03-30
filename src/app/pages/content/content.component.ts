@@ -26,4 +26,8 @@ export class ContentComponent {
     this.router.navigate(["/page/"+data.type]);
     this.choose=data.type
   }
+  login(){
+    this.router.navigate(["/login"]);
+  }
+  
 }
