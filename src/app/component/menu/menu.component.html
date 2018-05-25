@@ -1,6 +1,8 @@
 <div  *ngFor="let item of list">
         <li class="text" class="title" (mousedown)="rightMenuPar($event,item.id)" [ngClass]="{'choose': choose==item.id}" (click)="chooseStatus($event,item.id)" *ngIf="!item.childrens" >
+                        <span class="text">
                         <i class="anticon anticon-file-text"></i>{{item.name}}
+                        </span>
         </li>
         <li  *ngIf="item.childrens" (mousedown)="rightMenuPar($event,item.id)" (click)="chooseStatus($event,item.id)">
                 <span class="group title" [ngClass]="{'choose': choose==item.id}" >

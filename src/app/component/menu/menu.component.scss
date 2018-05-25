@@ -6,6 +6,7 @@ div{
         padding-left:16px ;
         webkit-transition: height .3s cubic-bezier(.645,.045,.355,1),padding .3s cubic-bezier(.645,.045,.355,1);
     transition: background .3s cubic-bezier(.645,.045,.355,1),padding .3s cubic-bezier(.645,.045,.355,1);
+    
     }
     .title{
         padding:0 5px; 
@@ -17,17 +18,17 @@ div{
     }
     li,span{
         cursor: pointer;
-        
+        list-style: none;
         
     }
     .choose{
         background-color: #108ee9;
     }
     .text{
-        display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 1;
-overflow: hidden;
+        height: 100%;
+        white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 width: calc(100% - 20px);
     }
     .group{

@@ -6,7 +6,12 @@
       <i class="anticon anticon-close"></i>
   </div>
         <ul class="full"  >
-               <app-menu [choose]="choose" [list]="list" (rightMenuShow)="rightMenuShow($event)" (chooseData)="chooseData($event)"></app-menu>
+            <nz-tree #nzTree [(ngModel)]="list"
+             [nzDraggable]="true"
+      (nzClick)="mouseAction('click',$event)"
+      (nzDblClick)="mouseAction('dblclick', $event)">
+    </nz-tree>
+               <!-- <app-menu [choose]="choose" [list]="list" (rightMenuShow)="rightMenuShow($event)" (chooseData)="chooseData($event)"></app-menu> -->
         </ul>
       <div class="resizeLine" [ngStyle]="{'left.px': resize}" (mousedown)="startResize($event)" >
           <i class="anticon anticon-swap"></i>

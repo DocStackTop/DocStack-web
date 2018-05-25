@@ -65,6 +65,7 @@ cursor: pointer;
     padding:0 20px;
     min-width: 200px;
     overflow: auto;
+    color: #fff;
 }
 .box-container {
     position: relative;
@@ -93,10 +94,14 @@ cursor: pointer;
     position: absolute;
     color: #fff;
     background-color: #333;
+    z-index: 5;
     ul{
+        margin: 0;
+        padding: 0;
         border-radius: 10px;
     }
     li{
+        list-style: none;
         min-width: 150px;
         text-align: center;
         padding: 3px 0;
@@ -105,4 +110,16 @@ cursor: pointer;
             background-color: #393939;
         }
     }
+}
+.ant-tree-title{
+    color: #fff;
+}
+.ant-tree li{
+    color: #fff;
+}
+.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #555;
+}
+.ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: #555;
 }

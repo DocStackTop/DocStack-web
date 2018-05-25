@@ -19,8 +19,11 @@ import { DetailsComponent } from './pages/content/details/details.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { MarkdownEditorComponent } from './component/md-editor/md-editor.component';
 import { MarkdownModule } from 'ngx-markdown';
-// import { LMarkdownEditorModule } from 'ngx-markdown-editor';
-
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './service/in-memory-data.service';
+import { ArticleService } from "./service/article.service";
+import { MessageService } from "./service/message.service";
+import { MenuService } from "./service/menu.service"
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,10 +44,18 @@ import { MarkdownModule } from 'ngx-markdown';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
     BrowserAnimationsModule,
     AppRoutingModule,
     NgZorroAntdModule.forRoot(),
     MarkdownModule.forRoot()
+  ],
+  providers: [
+    ArticleService,
+    MenuService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
